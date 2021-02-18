@@ -3,8 +3,13 @@ pipeline {
   stages {
     stage('buzz build ') {
       steps {
-        archiveArtifacts(artifacts: 'target/*.jar', fingerprint: true)
-        sh './jenkins/build.sh'
+        echo 'hello'
+      }
+    }
+
+    stage('buzz test') {
+      steps {
+        junit '**/surefire-reports/**/*.xml'
       }
     }
 
