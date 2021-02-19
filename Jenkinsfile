@@ -9,6 +9,7 @@ pipeline {
       steps {
         input(message: 'Deploy to stage', ok: 'please to it ')
         echo 'echo (${Hii_Name})'
+        sh 'echo "Hii (${VARIABLE_NAME})"'
       }
     }
 
