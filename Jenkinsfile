@@ -7,11 +7,8 @@ pipeline {
       }
     }
 
-    stage('buzz test') {
-      steps {
-        junit '**/surefire-reports/**/*.xml'
-      }
-    }
-
+  }
+  environment {
+    BUZZ_NAME = 'Worker Bee'
   }
 }
