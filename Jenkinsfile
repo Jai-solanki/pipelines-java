@@ -4,7 +4,9 @@ pipeline {
     stage('buzz build ') {
       steps {
         sh '''echo "I am a ${BUZZ_NAME}"
-echo "I am a ${echo "I am a ${BUILD_NUMBER}"}"'''
+'''
+        sh '''
+echo "I am a ${BUILD_NUMBER}"'''
       }
     }
 
