@@ -13,6 +13,6 @@ echo "I am a ${BUILD_NUMBER}"'''
   }
   environment {
     BUZZ_NAME = 'Worker Bee'
-    BUILD_NUMBER = ''
+    BUILD_NUMBER = '12'
   }
 }
